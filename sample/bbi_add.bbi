@@ -1,0 +1,79 @@
+//
+// 足し算プログラム
+//
+
+func fibo(n)
+    if n==1
+        return 1
+    elif n==0
+        return 0
+    else
+        return fibo(n-1)+fibo(n-2)
+    end
+end
+
+func echo(n)
+    return n
+end
+
+func add(a,b)
+    return a+b
+end
+
+func addMore(a,b,c)
+    return a+b+c
+end
+
+func change(a)
+    a=400
+end
+
+func changeMore(a,b,c)
+    a=400
+    b=500
+    c=600
+end
+
+func main()
+    a=100
+    b=200
+    c=300
+
+    println "a=",a
+    println "b=",b
+    println "c=",c
+
+    println "a+b=", add(100,200)
+    println "a+b+c=", addMore(100,200,300)
+
+    change(a)
+    println "a=",a
+
+    changeMore(a,b,c)
+    println "a=",a
+    println "b=",b
+    println "c=",c
+
+    i=1
+    while i!=0
+        if i>=10
+            break
+        end
+        println "i=",i
+        i=i+1
+    end
+
+    println "ループbreak成功"
+    //exit
+
+    var d[4]
+    d[0]=1
+    d[1]=2
+    d[2]=3
+    d[3]=4
+    d[4]=5
+    for i=0 to 4
+        println "d[",i,"]=",d[i]
+    end
+
+end
