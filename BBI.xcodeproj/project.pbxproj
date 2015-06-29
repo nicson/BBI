@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E03840F51B36F2E100C4A9D2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E03840F41B36F2E100C4A9D2 /* main.cpp */; };
+		E002932B1B3E047F004C4570 /* bbi_misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E002932A1B3E047F004C4570 /* bbi_misc.cpp */; };
+		E03840FC1B37102C00C4A9D2 /* bbi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E03840FB1B37102C00C4A9D2 /* bbi.cpp */; };
+		E0655A0D1B372B2B0065CEC2 /* bbi_pars.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0655A0C1B372B2B0065CEC2 /* bbi_pars.cpp */; };
+		E0655A0F1B3935670065CEC2 /* bbi_tbl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0655A0E1B3935670065CEC2 /* bbi_tbl.cpp */; };
+		E0655A111B39AEDE0065CEC2 /* bbi_tkn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0655A101B39AEDE0065CEC2 /* bbi_tkn.cpp */; };
+		E0655A131B3B03660065CEC2 /* bbi_code.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0655A121B3B03660065CEC2 /* bbi_code.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E002932A1B3E047F004C4570 /* bbi_misc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bbi_misc.cpp; sourceTree = "<group>"; };
+		E002932D1B3ECC94004C4570 /* bbi_add.bbi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bbi_add.bbi; sourceTree = "<group>"; };
 		E03840F11B36F2E100C4A9D2 /* BBI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BBI; sourceTree = BUILT_PRODUCTS_DIR; };
-		E03840F41B36F2E100C4A9D2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E03840FB1B37102C00C4A9D2 /* bbi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bbi.cpp; sourceTree = "<group>"; };
+		E0655A0A1B3710D30065CEC2 /* bbi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bbi.h; sourceTree = "<group>"; };
+		E0655A0B1B3711010065CEC2 /* bbi_prot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bbi_prot.h; sourceTree = "<group>"; };
+		E0655A0C1B372B2B0065CEC2 /* bbi_pars.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bbi_pars.cpp; sourceTree = "<group>"; };
+		E0655A0E1B3935670065CEC2 /* bbi_tbl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bbi_tbl.cpp; sourceTree = "<group>"; };
+		E0655A101B39AEDE0065CEC2 /* bbi_tkn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bbi_tkn.cpp; sourceTree = "<group>"; };
+		E0655A121B3B03660065CEC2 /* bbi_code.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bbi_code.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +51,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E002932C1B3ECC70004C4570 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				E002932D1B3ECC94004C4570 /* bbi_add.bbi */,
+			);
+			path = sample;
+			sourceTree = "<group>";
+		};
 		E03840E81B36F2E100C4A9D2 = {
 			isa = PBXGroup;
 			children = (
+				E002932C1B3ECC70004C4570 /* sample */,
 				E03840F31B36F2E100C4A9D2 /* BBI */,
 				E03840F21B36F2E100C4A9D2 /* Products */,
 			);
@@ -57,7 +79,14 @@
 		E03840F31B36F2E100C4A9D2 /* BBI */ = {
 			isa = PBXGroup;
 			children = (
-				E03840F41B36F2E100C4A9D2 /* main.cpp */,
+				E03840FB1B37102C00C4A9D2 /* bbi.cpp */,
+				E0655A0A1B3710D30065CEC2 /* bbi.h */,
+				E0655A0B1B3711010065CEC2 /* bbi_prot.h */,
+				E0655A0C1B372B2B0065CEC2 /* bbi_pars.cpp */,
+				E0655A0E1B3935670065CEC2 /* bbi_tbl.cpp */,
+				E0655A101B39AEDE0065CEC2 /* bbi_tkn.cpp */,
+				E0655A121B3B03660065CEC2 /* bbi_code.cpp */,
+				E002932A1B3E047F004C4570 /* bbi_misc.cpp */,
 			);
 			path = BBI;
 			sourceTree = "<group>";
@@ -118,7 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E03840F51B36F2E100C4A9D2 /* main.cpp in Sources */,
+				E0655A0F1B3935670065CEC2 /* bbi_tbl.cpp in Sources */,
+				E0655A131B3B03660065CEC2 /* bbi_code.cpp in Sources */,
+				E0655A111B39AEDE0065CEC2 /* bbi_tkn.cpp in Sources */,
+				E002932B1B3E047F004C4570 /* bbi_misc.cpp in Sources */,
+				E03840FC1B37102C00C4A9D2 /* bbi.cpp in Sources */,
+				E0655A0D1B372B2B0065CEC2 /* bbi_pars.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +266,7 @@
 				E03840FA1B36F2E100C4A9D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
